@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const AlumnosPageContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 36px;
 `
 
 export const AlumnosBuscadorWapper = styled.div`
@@ -33,6 +33,14 @@ export const AlumnoInput = styled.input`
   border: 1px solid ${({ theme }) => theme.colors.gray};
   border-radius: 8px;
   padding: 4px 8px;
+  width: 100%;
+  height: 100%;
+`
+
+export const CenterCell = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 `

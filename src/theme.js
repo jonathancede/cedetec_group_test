@@ -6,6 +6,7 @@ const theme = createTheme({
     lightMain: "#bd2528D0",
     pageBackground: "#edf1f7",
     gray: "#9FA6AB",
+    mainButton: "#001f3e",
   },
   constants: {
     headerHeight: "76px",

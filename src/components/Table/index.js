@@ -18,9 +18,10 @@ const Table = (props) => {
       paginationModel={paginationModel}
       onPaginationModelChange={setPaginationModel}
       localeText={{ MuiTablePagination: { labelRowsPerPage: "Filas por página" } }}
-      {...props}
+      isRowSelectable={() => false}
       sx={{
         ".MuiDataGrid-columnHeader": {
+          fontSize: "16px",
           backgroundColor: theme.colors.main,
           color: "white",
         },
@@ -36,7 +37,21 @@ const Table = (props) => {
         ".MuiDataGrid-virtualScrollerContent": {
           backgroundColor: "white",
         },
+        fontFamily: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Fira Sans",
+          "Droid Sans",
+          "Helvetica Neue",
+          "sans-serif",
+        ].join(", "),
       }}
+      {...props}
     />
   )
 }
