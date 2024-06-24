@@ -9,7 +9,7 @@ const Item = ({ open, Icon, label, path }) => {
   const isActive = useMemo(() => location.pathname === path, [location, path])
 
   return (
-    <ItemWrapper to={path}>
+    <ItemWrapper to={path} aria-current={isActive}>
       <Icon sx={{ color: isActive ? "black" : theme.colors.gray }} />
       {open && <ItemLabel $isActive={isActive}>{label}</ItemLabel>}
     </ItemWrapper>
